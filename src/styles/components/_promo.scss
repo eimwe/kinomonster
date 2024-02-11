@@ -1,0 +1,15 @@
+.promo {
+  position: fixed;
+  top: 50%;
+  left: -100px;
+  z-index: 1;
+
+  &__image {
+    width: 200px;
+  }
+
+  &:hover {
+    left: 0;
+    transition: left var(--timing);
+  }
+}

@@ -1,0 +1,10 @@
+.page-footer {
+  padding-block: 2em;
+  background-color: var(--bg-brand);
+
+  &__copyright {
+    margin-block-start: 1em;
+    text-align: center;
+    color: var(--clr-content-light);
+  }
+}

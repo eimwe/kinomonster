@@ -10,11 +10,17 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: "TeX", Arial, sans-serif;
   font-size: var(--fs-content);
   font-weight: 400;
   color: var(--clr-content);
   background-color: var(--bg-body);
+}
+
+body > footer {
+  position: sticky;
+  top: 100vh;
 }
 
 img {

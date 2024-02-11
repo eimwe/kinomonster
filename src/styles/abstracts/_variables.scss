@@ -1,0 +1,23 @@
+:root {
+  /* Typography */
+
+  // font-size
+  --fs-headline: clamp(2rem, 4vw + 1px, 3rem);
+  --fs-subheading: clamp(1.1rem, 4vw + 1px, 1.25rem);
+  --fs-content: clamp(1rem, 2vw + 1px, 1.125rem);
+
+  /* Colors */
+
+  // color
+  --clr-content-dark: #222;
+  --clr-content-light: white;
+  --clr-content-grey: #999;
+
+  // background-color
+  --bg-body: white;
+  --bg-header: darkslateblue;
+
+  /* Timing */
+
+  --timing: 300ms;
+}

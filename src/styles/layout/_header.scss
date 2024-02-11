@@ -1,0 +1,9 @@
+.page-header {
+  padding-block-start: 1em;
+  background-color: var(--bg-header);
+
+  &__container {
+    display: grid;
+    gap: 4em;
+  }
+}

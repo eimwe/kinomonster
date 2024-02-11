@@ -7,6 +7,10 @@
     @include mixins.list_reset;
 
     display: flex;
+
+    &--footer {
+      place-content: center;
+    }
   }
 
   &__item {
@@ -23,6 +27,16 @@
       background-size: cover;
       font-weight: 700;
       color: var(--clr-content-dark);
+    }
+
+    &--footer {
+      padding-inline: 1em;
+      padding-block: 0;
+      border-right: 1px solid currentColor;
+
+      &:last-child {
+        border-right: none;
+      }
     }
   }
 

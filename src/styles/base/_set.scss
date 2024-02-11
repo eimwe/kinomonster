@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "TeX", Arial, sans-serif;
+  font-size: var(--fs-content);
+  font-weight: 400;
+  color: var(--clr-content);
+  background-color: var(--bg-body);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+dl,
+dd,
+figure,
+figcaption {
+  margin: 0;
+}

@@ -1,0 +1,22 @@
+.logo {
+  color: var(--clr-content-light);
+
+  &__heading {
+    font-size: var(--fs-headline);
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: normal;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity var(--timing);
+    }
+  }
+
+  &__subheading {
+    margin: 0;
+    font-size: var(--fs-subheading);
+    font-weight: 400;
+    color: var(--clr-content-grey);
+  }
+}

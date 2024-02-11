@@ -1,0 +1,37 @@
+@use "../abstracts/mixins";
+
+.navigation {
+  place-self: end;
+
+  &__container {
+    @include mixins.list_reset;
+
+    display: flex;
+  }
+
+  &__item {
+    padding-block-start: 1.5em;
+    padding-block-end: 1em;
+    padding-inline: 2.5em;
+    color: var(--clr-content-light);
+
+    &--active {
+      pointer-events: none;
+      background-color: var(--bg-body);
+      background-image: url("../assets/images/film-frame.webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-weight: 700;
+      color: var(--clr-content-dark);
+    }
+  }
+
+  &__link {
+    opacity: 1;
+
+    &:hover {
+      opacity: 0.8;
+      transition: opacity var(--timing);
+    }
+  }
+}

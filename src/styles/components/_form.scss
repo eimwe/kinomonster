@@ -1,0 +1,21 @@
+.form {
+  &__field {
+    max-width: 20ch;
+    padding-inline: 0.75em;
+    padding-block: 0.25em;
+    border: 1px solid var(--clr-content-grey);
+    border-radius: var(--radius-min);
+    outline-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: var(--clr-heading-aside);
+      outline-color: var(--clr-heading-aside);
+      transition: color var(--timing), outline-color var(--timing);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    gap: 0.2em;
+  }
+}

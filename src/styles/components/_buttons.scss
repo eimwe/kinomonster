@@ -4,6 +4,8 @@
   font-weight: 700;
 
   &--submit {
+    flex-grow: 1;
+    min-width: fit-content;
     padding-inline: 0.75em;
     padding-block: 0.25em;
     background-color: var(--bg-body);

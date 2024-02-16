@@ -1,0 +1,10 @@
+.heading {
+  margin: 0;
+  margin-block-end: 1em;
+  font-weight: 300;
+
+  &--sidebar {
+    font-size: var(--fs-heading-aside);
+    color: var(--clr-heading-aside);
+  }
+}

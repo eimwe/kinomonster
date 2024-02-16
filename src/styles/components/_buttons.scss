@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 700;
+
+  &--submit {
+    padding-inline: 0.75em;
+    padding-block: 0.25em;
+    background-color: var(--bg-body);
+    border: 1px solid var(--clr-content-grey);
+    border-radius: var(--radius-min);
+    color: var(--clr-heading-aside);
+
+    &:hover,
+    &:focus {
+      background-color: var(--bg-btn-aside-hover);
+      color: var(--clr-content-light);
+      outline-color: var(--clr-content-light);
+      transition: background-color var(--timing), color var(--timing),
+        outline-color var(--timing);
+    }
+  }
+}

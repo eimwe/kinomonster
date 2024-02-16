@@ -1,0 +1,15 @@
+.link {
+  color: var(--clr-link);
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-color: transparent;
+
+  &:hover {
+    text-decoration-color: currentColor;
+    transition: text-decoration-color var(--timing);
+  }
+
+  &--sidebar {
+    font-size: var(--fs-xs);
+  }
+}

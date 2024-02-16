@@ -6,6 +6,7 @@
   --fs-subheading: clamp(1.1rem, 4vw + 1px, 1.25rem);
   --fs-content: clamp(1rem, 1vw + 1px, 1.125rem);
   --fs-heading-aside: clamp(1.25rem, 3vw + 1px, 1.5rem);
+  --fs-xs: clamp(0.5rem, 1vw + 1px, 0.8rem);
 
   /* Colors */
 
@@ -15,6 +16,7 @@
   --clr-content-grey: #999;
   --clr-content-dark-grey: #696969;
   --clr-heading-aside: #003366;
+  --clr-link: #0000ff;
 
   // background-color
   --bg-body: white;

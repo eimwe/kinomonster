@@ -60,97 +60,175 @@
     </header>
     <main>
       <div class="wrapper">
-        <a href="#" class="promo">
-          <img
-            class="promo__image"
-            src="./assets/images/movie-ticket.png"
-            alt="Movie ticket"
-          />
-        </a>
-        <aside class="sidebar">
-          <section class="card card--sidebar search">
-            <h3 class="heading heading--sidebar">Search</h3>
-            <form class="form search__form" action="#" method="get">
-              <div class="form__wrapper">
-                <input
-                  class="form__field"
-                  type="search"
-                  name="search-field"
-                  id="search-field"
-                  placeholder="Cast, movies, etc."
-                />
-                <button class="button button--submit" type="submit">
-                  Find
-                </button>
-              </div>
-            </form>
-          </section>
-          <section class="card card--sidebar login">
-            <h3 class="heading heading--sidebar">Sign in</h3>
-            <form class="form login__form" action="#" method="post">
-              <input
-                class="form__field"
-                type="text"
-                name="login-field"
-                id="login-field"
-                placeholder="Login"
+        <div class="page-content">
+          <div class="page-content__main">
+            <a href="#" class="promo">
+              <img
+                class="promo__image"
+                src="./assets/images/movie-ticket.png"
+                alt="Movie ticket"
               />
-              <div class="form__wrapper">
+            </a>
+            <div class="page-content__movies">
+              <section class="movies">
+                <h2 class="heading movies__heading">Upcoming movies</h2>
+                <div class="movies__container">
+                  <figure class="movies__item">
+                    <div class="movies__image-container">
+                      <img src="#" alt="Dune. Part Two movie poster">
+                    </div>
+                    <figcaption class="movies__caption">
+                      <h3 class="heading movies__title">
+                        <a href="#" title="Read more about this movie">Dune. Part Two</a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                  <figure class="movies__item">
+                      <div class="movies__image-container">
+                        <img src="#" alt="Mad Max Chronicles: Furiosa movie poster">
+                      </div>
+                      <figcaption class="movies__caption">
+                        <h3 class="heading movies__title">
+                          <a href="#" title="Read more about this movie">Mad Max Chronicles: Furiosa</a>
+                        </h3>
+                      </figcaption>
+                  </figure>
+                </div>
+                <a href="#" title="View all movies from this category">View more</a>
+              </section>
+              <section class="movies">
+                <h2 class="heading movies__heading">Most rated movies</h2>
+                <div class="movies__container">
+                  <figure class="movies__item">
+                    <div class="movies__image-container">
+                      <img src="#" alt="Dune. Part One movie poster">
+                    </div>
+                    <figcaption class="movies__caption">
+                      <h3 class="heading movies__title">
+                        <a href="#" title="Read more about this movie">Dune. Part One</a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                  <figure class="movies__item">
+                    <div class="movies__image-container">
+                      <img src="#" alt="Mad Max: Fury Road movie poster">
+                    </div>
+                    <figcaption class="movies__caption">
+                      <h3 class="heading movies__title">
+                        <a href="#" title="Read more about this movie">Mad Max: Fury Road</a>
+                      </h3>
+                    </figcaption>
+                  </figure>
+                </div>
+                <a href="#" title="View all movies from this category">View more</a>
+              </section>
+            </div>
+            <div class="page-content__news">
+              <section class="news">
+                <h2 class="sr-only">The latest news in the movie industry</h2>
+                <article class="news__item">
+                  <h3 class="heading news__title">News item 1</h3>
+                  <p class="news__desc">News item 1 description</p>
+                  <button class="button button--reader" type="button">Read more</button>
+                </article>
+                <article class="news__item">
+                  <h3 class="heading news__title">News item 2</h3>
+                  <p class="news__desc">News item 2 description</p>
+                  <button class="button button--reader" type="button">Read more</button>
+                </article>
+                <article class="news__item">
+                  <h3 class="heading news__title">News item 3</h3>
+                  <p class="news__desc">News item 3 description</p>
+                  <button class="button button--reader" type="button">Read more</button>
+                </article>
+              </section>
+            </div>
+          </div>
+          <aside class="sidebar">
+            <section class="card card--sidebar search">
+              <h3 class="heading heading--sidebar">Search</h3>
+              <form class="form search__form" action="#" method="get">
+                <div class="form__wrapper">
+                  <input
+                    class="form__field"
+                    type="search"
+                    name="search-field"
+                    id="search-field"
+                    placeholder="Cast, movies, etc."
+                  />
+                  <button class="button button--submit" type="submit">
+                    Find
+                  </button>
+                </div>
+              </form>
+            </section>
+            <section class="card card--sidebar login">
+              <h3 class="heading heading--sidebar">Sign in</h3>
+              <form class="form login__form" action="#" method="post">
                 <input
                   class="form__field"
-                  type="password"
-                  name="password-field"
-                  id="password-field"
-                  placeholder="Password"
+                  type="text"
+                  name="login-field"
+                  id="login-field"
+                  placeholder="Login"
                 />
-                <button class="button button--submit" type="submit">
-                  Log in
-                </button>
-              </div>
-              <div class="login__alternatives">
-                <a class="link link--sidebar" href="#" target="_blank"
-                  >Forgot password?</a
-                >
-                <a class="link link--sidebar" href="#" target="_blank"
-                  >Sign up</a
-                >
-              </div>
-            </form>
-          </section>
-          <section class="card card--sidebar news">
-            <h3 class="heading heading--sidebar">News</h3>
-            <article class="news__card">
-              <time class="news__date" datetime="2024-02-06 16:00">Feb. 6</time>
-              <h4 class="heading news__heading">
-                Advanced search feature released
-              </h4>
-              <a class="link link--sidebar" href="#">Read more</a>
-            </article>
-          </section>
-          <section class="card card--sidebar rating">
-            <h3 class="heading heading--sidebar">Movie ratings</h3>
-            <dl class="rating__list">
-              <div class="rating__item">
-                <dt class="rating__link">
-                  <a class="link" href="#">Interstellar</a>
-                </dt>
-                <dd class="rating__score">8.1</dd>
-              </div>
-              <div class="rating__item">
-                <dt class="rating__link">
-                  <a class="link" href="#">The Matrix</a>
-                </dt>
-                <dd class="rating__score">8.0</dd>
-              </div>
-              <div class="rating__item">
-                <dt class="rating__link">
-                  <a class="link" href="#">Mad Max</a>
-                </dt>
-                <dd class="rating__score">7.5</dd>
-              </div>
-            </dl>
-          </section>
-        </aside>
+                <div class="form__wrapper">
+                  <input
+                    class="form__field"
+                    type="password"
+                    name="password-field"
+                    id="password-field"
+                    placeholder="Password"
+                  />
+                  <button class="button button--submit" type="submit">
+                    Log in
+                  </button>
+                </div>
+                <div class="login__alternatives">
+                  <a class="link link--sidebar" href="#" target="_blank"
+                    >Forgot password?</a
+                  >
+                  <a class="link link--sidebar" href="#" target="_blank"
+                    >Sign up</a
+                  >
+                </div>
+              </form>
+            </section>
+            <section class="card card--sidebar news">
+              <h3 class="heading heading--sidebar">News</h3>
+              <article class="news__card">
+                <time class="news__date" datetime="2024-02-06 16:00">Feb. 6</time>
+                <h4 class="heading news__heading">
+                  Advanced search feature released
+                </h4>
+                <a class="link link--sidebar" href="#">Read more</a>
+              </article>
+            </section>
+            <section class="card card--sidebar rating">
+              <h3 class="heading heading--sidebar">Movie ratings</h3>
+              <dl class="rating__list">
+                <div class="rating__item">
+                  <dt class="rating__link">
+                    <a class="link" href="#">Interstellar</a>
+                  </dt>
+                  <dd class="rating__score">8.1</dd>
+                </div>
+                <div class="rating__item">
+                  <dt class="rating__link">
+                    <a class="link" href="#">The Matrix</a>
+                  </dt>
+                  <dd class="rating__score">8.0</dd>
+                </div>
+                <div class="rating__item">
+                  <dt class="rating__link">
+                    <a class="link" href="#">Mad Max</a>
+                  </dt>
+                  <dd class="rating__score">7.5</dd>
+                </div>
+              </dl>
+            </section>
+          </aside>
+        </div>
       </div>
     </main>
     <footer class="page-footer">

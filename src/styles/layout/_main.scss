@@ -2,4 +2,6 @@
   display: grid;
   grid-auto-flow: column;
   place-content: space-between;
+  padding-block-start: 2em;
+  padding-block-end: 4em;
 }

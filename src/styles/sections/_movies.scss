@@ -1,0 +1,21 @@
+.movies {
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+  }
+
+  &__image {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    inline-size: 100%;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 0.5em;
+    text-align: center;
+  }
+}

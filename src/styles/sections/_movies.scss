@@ -1,5 +1,7 @@
 .movies {
 
+  $parent: &;
+
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -10,12 +12,34 @@
     aspect-ratio: 9/16;
     object-fit: cover;
     inline-size: 100%;
+    transition: transform var(--timing);
+  }
+
+  &__image-container {
+    overflow: hidden;
+  }
+
+  &__link {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-color: transparent;
+    transition: color var(--timing), text-decoration-color var(--timing);
   }
 
   &__item {
+    cursor: pointer;
     display: grid;
     grid-template-rows: min-content;
     gap: 0.5em;
     text-align: center;
+
+    &:hover #{$parent}__link {
+      color: var(--clr-link);
+      text-decoration-color: currentColor;
+    }
+
+    &:hover #{$parent}__image {
+      transform: scale(1.2);
+    }
   }
 }

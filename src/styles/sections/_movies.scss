@@ -2,6 +2,17 @@
 
   $parent: &;
 
+  & + & {
+    margin-block-start: 4em;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-end: 1em;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
